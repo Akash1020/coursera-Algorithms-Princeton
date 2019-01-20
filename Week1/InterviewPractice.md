@@ -2,7 +2,7 @@
      Given a social network containing nn members and a log file containing mm timestamps at which times pairs of members formed friendships, design an algorithm to determine the earliest time at which all members are connected  
      (i.e., every member is a friend of a friend of a friend ... of a friend). Assume that the log file is sorted by timestamp  
      and that friendship is an equivalence relation. The running time of your algorithm should be `mlogn` or better and use  
-     extra space proportional to 
+     extra space proportional to `n` 
 
 *Solution:*    
      **Design an union-find algorithm, that performs union of two friends at a time. In the beginning all the n members are individual components.  
@@ -10,6 +10,7 @@
      Total number of connected components decreases with each iteration, with each union task.  
      Total time that takes till total number of components is equal to 1 is mlogn**
      
+
 
 
 *Union-find with specific canonical element:*    
