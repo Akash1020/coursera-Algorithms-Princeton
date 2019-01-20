@@ -17,8 +17,14 @@
      Add a method `find()` to the union-find data type so that `find(i)` returns the largest element in the connected component containing `i`. The operations, `union()`, `connected()` and `find()` should all take logarithmic time or better.  
      For example, if one of the connected components is `{1,2,6,9}`, then the `find()` method should return 9  
      for each of the four elements in the connected components.  
-
-*Solution:*  
+     
+     
+     
+*Successor with delete:*  
+     Given a set of `n` integers `S = {0,1,...,n−1}` and a sequence of requests of the following form:  
+     &nbsp;&nbsp;Remove `x` from S  
+     &nbsp;&nbsp;Find the successor of `x`: the smallest `y` in `S` such that `y>=x`  
+     design a data type so that all operations (except construction) take logarithmic time or better in the worst case.
      
 
      
